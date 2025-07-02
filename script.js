@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener('DOMContentLoaded', function () {
   const navLinks = document.querySelectorAll('.nav-link');
   const navbarCollapse = document.getElementById('navbarNav');
+  const topButton = document.getElementById("top-button");
 
   navLinks.forEach(function (link) {
     link.addEventListener('click', function () {
@@ -62,11 +63,20 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  //Applied for arrow button also
+  topButton.addEventListener("click", function () {
+    const collapse = bootstrap.Collapse.getInstance(navbarCollapse);
+    if (collapse && navbarCollapse.classList.contains("show")) {
+      collapse.hide();
+    }
+  });
+  //Applied for arrow button also
+
 });
 
 
 // Typing Animation starts
-
 const texts = ["web developer", "problem solver"];
 let index = 0;
 let charIndex = 0;
@@ -101,7 +111,6 @@ function type() {
 }
 
 type();
-
 // Typing Animation ends
 
 
