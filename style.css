@@ -101,7 +101,7 @@ html {
 
 .carousel-inner img {
   width: 100%;
-  height: 68.0vh;
+  height: 100vh;
   margin-top: -1%;
   margin-right: 0%;
   filter: contrast(113%);

@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // Typing Animation starts
-const texts = ["web developer", "problem solver"];
+const texts = ["a web developer", "a problem solver"];
 let index = 0;
 let charIndex = 0;
 let currentText = "";
