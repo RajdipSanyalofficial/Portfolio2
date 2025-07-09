@@ -104,13 +104,11 @@ html {
   height: 100vh;
   margin-top: -1%;
   margin-right: 0%;
-  filter: contrast(113%);
-
 }
 
 .carousel-caption {
   position: absolute;
-  top: 60.5%;
+  top: 59.5%;
   margin-left: 1.5%;
   transform: translate(-2%, -51%);
 }
