@@ -108,7 +108,7 @@ html {
 
 .carousel-caption {
   position: absolute;
-  top: 59.5%;
+  top: 58.9%;
   margin-left: 1.5%;
   transform: translate(-2%, -51%);
 }
@@ -470,3 +470,21 @@ p.mb-3 {
     padding: 4px 8px;
   }
 }
+
+#prjt {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+#prjt a {
+  flex: 1;
+  align-items: center;
+}
+
+@media(min-width: 767px) and (max-width: 991.98px) {
+  #prjt {
+    flex-direction: column;
+  }
+}
+
