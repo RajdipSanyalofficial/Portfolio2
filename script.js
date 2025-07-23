@@ -146,8 +146,8 @@ function validation() {
     return false
   }
 
-  alert("Your response has been submitted successfully!");
   document.querySelector("form").reset();
+  window.location.href="successmsg.html";
   return true;
 }
 //Form validation
