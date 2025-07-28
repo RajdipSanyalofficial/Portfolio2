@@ -11,6 +11,27 @@ window.addEventListener("load", function () {
 //Loading JS
 
 
+//Toggle Button
+const toggleBtn = document.getElementById('customToggleBtn');
+const toggleIcon = document.getElementById('toggleIcon');
+
+
+toggleBtn.addEventListener('click', () => {
+  const isMenuOpen = toggleIcon.classList.contains('fa-bars');
+
+  toggleIcon.classList.toggle('fa-bars', !isMenuOpen);
+  toggleIcon.classList.toggle('fa-times', isMenuOpen);
+});
+
+
+const navbarCollapse = document.getElementById('navbarNav');
+navbarCollapse.addEventListener('hidden.bs.collapse', () => {
+  toggleIcon.classList.remove('fa-times');
+  toggleIcon.classList.add('fa-bars');
+});
+//Toggle Button
+
+
 //Active NavBar
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".nav-link");
@@ -147,7 +168,7 @@ function validation() {
   }
 
   document.querySelector("form").reset();
-  window.location.href="successmsg.html";
+  window.location.href = "successmsg.html";
   return true;
 }
 //Form validation
