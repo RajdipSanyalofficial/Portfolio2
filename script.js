@@ -1,16 +1,3 @@
-//Loading JS
-window.addEventListener("load", function () {
-  const preloader = document.getElementById("preloader");
-  setTimeout(() => {
-    preloader.classList.add("hide");
-    setTimeout(() => {
-      preloader.remove();
-    }, 100);
-  }, 35);
-});
-//Loading JS
-
-
 //Toggle Button
 const toggleBtn = document.getElementById('customToggleBtn');
 const toggleIcon = document.getElementById('toggleIcon');
